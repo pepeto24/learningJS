@@ -4,7 +4,7 @@ var rangeC = null;
 var inputA = null;
 var inputB = null;
 var inputC = null;
-//var favcolor = null;
+var favcolor = null;
 
 function start() {
   mapInputs();
@@ -19,7 +19,7 @@ function mapInputs() {
   inputA = document.querySelector("#inputA");
   inputB = document.querySelector("#inputB");
   inputC = document.querySelector("#inputC");
-  //favcolor = document.querySelector("#favcolor");
+  favcolor = document.querySelector("#favcolor");
 }
 
 function addEvents() {
@@ -44,7 +44,12 @@ function handleInputCChange(event) {
 }
 
 function calculate() {
-  var favcolor = parseInt(inputA.value, 10);
+  var numberA = parseInt(inputA.value, 10);
+  var numberB = parseInt(inputB.value, 10);
+  var numberC = parseInt(inputC.value, 10);
+
+  favcolor.value = numberA + numberB + numberC;
+
 }
 
 start();
