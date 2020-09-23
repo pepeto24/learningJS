@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="inputGroup">
+        (R) Red
+        <input
+          class="range"
+          type="range"
+          value="0"
+          min="0"
+          max="255"
+          id="rangeA"
+        />
+        <input
+          class="text"
+          type="text"
+          value="0"
+          readonly
+          disabled
+          id="inputA"
+        />
+      </div>
+
+      <div class="inputGroup">
+          (G) Green
+        <input
+          class="range"
+          type="range"
+          value="0"
+          min="0"
+          max="255"
+          id="rangeB"
+        />
+        <input
+          class="text"
+          type="text"
+          value="0"
+          readonly
+          disabled
+          id="inputB"
+        />
+      </div>
+
+      <div class="inputGroup">
+        (B) Blue
+        <input
+          class="range"
+          type="range"
+          value="0"
+          min="0"
+          max="255"
+          id="rangeC"
+        />
+        <input
+          class="text"
+          type="text"
+          value="0"
+          readonly
+          disabled
+          id="inputC"
+        />
+      </div>
+
+      <div class="results">
+      <label for="favcolor">
+
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        
+      </label>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
