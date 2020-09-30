@@ -3,78 +3,58 @@
   <head>
     <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen, projection"/>    
   </head>
 
   <body>
-    <div class="container">
-      <div class="inputGroup">
-        (R) Red
-        <input
-          class="range"
-          type="range"
-          value="0"
-          min="0"
-          max="255"
-          id="rangeA"
-        />
-        <input
-          class="text"
-          type="text"
-          value="0"
-          readonly
-          disabled
-          id="inputA"
-        />
+    
+    <div class="input-container">
+
+      <div class="red-container">
+        <label>
+
+          (R) Red
+          <input type="range" id="inputR" value="0" min="0" max="255">
+
+        </label>
+
+        <input type="text" value="0" id="rangeR" disabled/>
       </div>
 
-      <div class="inputGroup">
+      <div class="green-container">
+        <label>
+
           (G) Green
-        <input
-          class="range"
-          type="range"
-          value="0"
-          min="0"
-          max="255"
-          id="rangeB"
-        />
-        <input
-          class="text"
-          type="text"
-          value="0"
-          readonly
-          disabled
-          id="inputB"
-        />
+          <input type="range" id="inputG" value="0" min="0" max="255">
+
+        </label>
+
+        <input type="text" value="0" id="rangeG" disabled/>
       </div>
 
-      <div class="inputGroup">
-        (B) Blue
-        <input
-          class="range"
-          type="range"
-          value="0"
-          min="0"
-          max="255"
-          id="rangeC"
-        />
-        <input
-          class="text"
-          type="text"
-          value="0"
-          readonly
-          disabled
-          id="inputC"
-        />
+      <div class="blue-container">
+        <label>
+
+          (B) Blue
+          <input type="range" id="inputB" value="0" min="0" max="255">
+
+        </label>
+
+        <input type="text" value="0" id="rangeB" disabled/>
       </div>
 
-      <div class="results">
-      <label for="favcolor">
 
-        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-        
-      </label>
+    </div>
+    
+    
+    
+    <div class="square"></div>
+      <script src=".js/script.js"></script>
+    </div>
 
-    <script defer src="./js/script.js"></script>
+    
+
+
+    
   </body>
 </html>
