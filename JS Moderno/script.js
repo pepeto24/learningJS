@@ -70,3 +70,13 @@ console.log(sum(2,3));
 console.log(sum2(2,3));
 console.log(sum3(2,3));
 console.log(sum4(2,3));
+
+//template literals
+
+const name = 'Elton';
+const surName = 'Araujo'
+const text1 = 'Meu nome é ' +name + ' ' +surName;
+const text2 = `Meu nome e ${name} ${surName}`; 
+
+console.log(text1);
+console.log(text2);
